@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclasses</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+
+        #teste:hover {
+            color: red;
+        }
+
+        #teste>p {
+            display: none;
+        }
+
+        #teste:hover>p {
+            display: block;
+            background-color: blueviolet;
+            color: aliceblue;
+            font-weight: 600;
+            width: 162px;
+            text-align: center;
+            border-radius: 15%;
+        }
+
+        .blocos {
+            text-align: center;
+            background-color: cadetblue;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            border: 1.5px solid black;
+        }
+
+        .blocos:hover {
+            background-color: chartreuse;
+        }
+
+        a {
+            color: chocolate;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(126, 63, 19);
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blocos">01</div>
+    <div class="blocos">02</div>
+    <div class="blocos">03</div>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse abaixo</p>
+    <div id="teste">
+        passe o mouse aqui..
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <h1>Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/caua_naves/" target="_blank"> Meu instagram</a></li>
+        <li><a href="https://www.youtube.com/@ticullinogames8142" target="_blank">Meu canal</a></li>
+    </ul>
+
+</body>
+
+</html>

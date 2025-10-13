@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags em HTML5</title>
+
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: justify;
+            background-color: #BFBFBF;
+            margin: 0px;
+        }
+        html {
+            height: 100px;
+        }
+
+        #titulo_principal {
+            background-color: #405173;
+            text-align: center;
+            padding: 30px 0px 30px 0px;
+            margin: auto;
+            border-bottom: 4px solid #733C3C;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+            
+        }
+
+        .campos{
+            background-color: #405173;
+            background-attachment: fixed;
+            border: 4px solid #733C3C;
+            width: 230px;
+            padding: 10px 0px 10px 5px;
+            margin: 15px 0px 15px 10px;
+            display: inline-block;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.527);
+            border-radius: 0px 10px;
+        }
+
+        .imagem {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin: 0px 0px 0px 10px;
+        }
+
+        footer{
+            background-color: #733C3C;
+            margin-top: 100%;
+        }
+
+        .campos>p {
+            padding-right: 5px;
+            display: none;
+        }
+
+        .campos:hover>p {
+            display: block;
+        }
+
+        #bola {
+            background-color: black;
+            display: block;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="titulo_principal">Bem vindo ao site de noticias</h1>
+        <section class="campos">
+            <h1>Espostes    <img class="imagem" src="https://www.nicepng.com/png/full/969-9698146_computer-icons-arrow-symbol-button-logo-seta-para.png" alt=""></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptate enim, commodi, fuga alias laborum eum repellat, eos aperiam exercitationem est eaque dignissimos sequi cum officiis cupiditate at modi hic!</p>
+        </section>
+
+        <section class="campos">
+            <h1>Tecnologias     <img class="imagem" src="https://www.nicepng.com/png/full/969-9698146_computer-icons-arrow-symbol-button-logo-seta-para.png" alt=""></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde iste provident rerum numquam atque accusantium sed adipisci fugiat cumque magni iusto consectetur distinctio cum molestias, animi quae totam porro!</p>
+        </section>
+
+        <section class="campos">
+            <h1>Política     <img class="imagem" src="https://www.nicepng.com/png/full/969-9698146_computer-icons-arrow-symbol-button-logo-seta-para.png" alt=""></h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam aut blanditiis ut quibusdam doloremque consectetur ipsa ipsam aspernatur! Placeat eveniet tempora excepturi tenetur perferendis. Veritatis reprehenderit explicabo quasi repellendus perferendis inventore. Magni aliquid obcaecati dicta iusto odio animi qui illo consequuntur, itaque aliquam deserunt dolorem sunt architecto culpa, non corporis eos nisi. Culpa earum consectetur officiis asperiores est dolorem.</p>
+        </section>
+
+        <div id="bola">
+        </div>
+    </main>
+    
+    <footer>
+        Criado por Cauã Naves.
+    </footer>
+</body>
+</html>
